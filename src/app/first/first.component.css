@@ -1,0 +1,101 @@
+.c {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    padding:12px 24px;
+    text-align: center;
+    border:2px solid rgb(24, 100, 214);
+    color:#010513;
+}
+
+.e {
+    display:inline-block;
+    font-family: cursive;
+    color:rgb(237, 241, 243);
+}
+.bar-item .bar .center{
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.bar .button{
+    white-space: normal;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    height: 60px;
+    width: 240px;
+    font-weight: bold;
+    
+}
+.button:hover{
+    background-color: blue;
+}
+.light-grey{
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+.round{
+   border-radius: 4px; 
+}
+.display-bottommiddle{
+    position: absolute;
+    transform: translate(-50%,0%);
+    left: 50%;
+}
+.display-container{
+    position: relative;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+}
+.iage{
+    height: 700px;
+    background-image: url(d1.jpg);
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    
+
+    animation-name:animate ;
+    animation-duration:30s ;
+    animation-direction: alternate-reverse ;
+    animation-fill-mode: forwards;
+    animation-play-state:running ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out ;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(d2.jpg);
+    }
+    20%{
+        background-image: url(d3.jpg);
+    }
+    40%{
+        background-image: url(d4.jpg);
+    }
+    60%{
+        background-image: url(d5.jpg);
+    }
+    80%{
+        background-image: url(d6.jpg);
+    }
+    100%{
+        background-image: url(d7.jpg);
+    }
+}

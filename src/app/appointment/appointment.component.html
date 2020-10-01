@@ -1,0 +1,64 @@
+
+        <div class="a" id="appointment">
+          <h2 class="b">feel free to share your Project Idea :)</h2>
+<form class="form">
+
+
+  <table class="center" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>First name</mat-label>
+      <input matInput [formControl]="nameFormControl">
+      <mat-error *ngIf="nameFormControl.hasError('name') && !nameFormControl.hasError('required')"></mat-error>
+      <mat-error *ngIf="nameFormControl.hasError('required')">
+          Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field></td>
+    <td><mat-form-field appearance="outline" class="example-full-width" >
+      <mat-label> Last Name </mat-label>
+      <input matInput required>
+    </mat-form-field></td>
+  </tr>
+  <tr><td>
+      <mat-form-field class="cc" appearance="outline" style="width: 350px;">
+          <mat-label>Email</mat-label>
+          <input matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+          <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        </td>
+  </tr>
+  
+  
+  <tr>
+      <td>
+  
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea matInput #message maxlength="256" [formControl]="messageFormControl" placeholder="Ex. Need responsive forms,and animations..."></textarea>
+                <mat-error *ngIf="messageFormControl.hasError('message') && !messageFormControl.hasError('required')"></mat-error>
+                <mat-error *ngIf="messageFormControl.hasError('required')">
+                 Details are <strong>COMPULSORY</strong>
+      </mat-error>
+                <mat-hint align="start"><strong>Don't disclose personal info</strong> </mat-hint>
+                <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+              </mat-form-field>
+            
+      </td>
+  </tr>
+  <tr>
+      <td><div class="btn">
+          <button mat-fab color="primary">Submit</button>
+          </div>
+      </td>
+  </tr>
+</table>
+
+  
+
+  
+</form>
+</div>

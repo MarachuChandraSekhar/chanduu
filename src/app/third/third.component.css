@@ -1,0 +1,34 @@
+
+.col {
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 518px;
+    background-color: darkgray;
+}
+.abc {
+    background-color: darkgray;
+    
+    padding: 5%;
+}
+.def {
+    background-color: black;
+    height: 518px;
+   
+}
+.hover-opacity:hover{
+      opacity: 0.60;
+      letter-spacing: 1em;
+      
+}
+.cc {
+    font-size: 25px;
+}
+.ccc {
+    font-size: 15px;
+}
+img {
+    padding: 0%;
+    height: 518px;
+    
+}
